@@ -27,3 +27,8 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 组件说明
+```
+views 放入页面级别组件  components 放入公用组件
+```
