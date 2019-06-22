@@ -55,9 +55,10 @@
                 // clearTimeout() 函数防抖策略
                 // setTimeout()
                 let that = this
+                let city = this.$store.state.city.id
                 this.cancelRequest()
 
-                this.axios.get('/api/searchList?cityId=10&kw=' + newVal, {
+                this.axios.get('/api/searchList?cityId='+ cityId +'&kw=' + newVal, {
                     cancelToken: new this.axios.CancelToken(function (c) {
                         that.source = c
                     })
